@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.19.1/jquery.validate.min.js"></script>
+    <script type="text/javascript" src="js/index-js.js"></script>
+    <script type="text/javascript" src="js/contact-js.js"></script>
+    <script src="js/form-validation.js"></script>
+    <link rel="stylesheet" href="CSS/event_style.css">
+    <link rel="stylesheet" href="CSS/contact_style.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <!-- font-awesome icons -->
+    <link href="http://maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet">
+    <!-- //font-awesome icons -->
+    <script src="https://smtpjs.com/v3/smtp.js"></script>
+</head>
+<body>
+    <header>
+        <div class="menu">
+            <nav>                                           
+                <div class="logo">         
+                    <a href="index.html" class="logo_text">
+                        <img id="direction" class="image_style" src="Images/Memo3.png">
+                        <span>MEMORIES TIES</span>
+                        <img class="image_style" src="Images/Memo3.png">
+                    </a>
+                </div>
+                <ul>
+                    <li name="home"><a href="index.html">Home</a></li>						
+                    <li name="gallery"><a href="gallery.html">Gallery</a></li>
+                    <li name="testimonials"><a href="testimonials.html">Testimonials</a></li>
+                    <li name="contact"><a href="contact.html">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+        <div class="pageTitle"><h2>Get In Touch</h2></div>
+    </header>
+    <main>
+        <section class="main_section">
+            <section class="contactTitle">
+                <p class="title">
+                    Feel free to drop us a line below!
+                </p>
+            </section>
+
+            <form action="" class="contactForm" name="contactUs">
+                <section class="inputs">
+                    <label class="label" for="name">Full Name<span class="required">*</span></label>
+                    <input onfocus="changeBack(this.id)" onblur="normBack(this.id)" type="text" class="inputText" name="name" id="name" placeholder="Full Name" ></br>
+                </section>
+                <section class="inputs">
+                    <label class="label" for="email">Email<span class="required">*</span></label>
+                    <input onfocus="changeBack(this.id)" onblur="normBack(this.id)" class="inputText" type="email" name="email" id="email" placeholder="example@email.com"></br>
+                </section>
+               <section class="inputs">
+                    <label class="label" for="phNum">Phone<span class="required">*</span></label>
+                    <input onfocus="changeBack(this.id)" onblur="normBack(this.id)" class="inputText" type="number" name="phNum" id="phNum" placeholder="514-888-9999"></br>
+                </section>
+                <section class="inputs">
+                    <label class="label" for="message">Message</label>
+                    <textarea onfocus="changeBack(this.id)" onblur="normBack(this.id)" class="inputText" id="message" name="message" placeholder="Your Comment..."></textarea>
+                </section>
+
+                <section class="formbtn" id="alertToSubmit">
+                    <button type="submit" class="submitBtn">Submit</button>
+                </section>
+            </form>
+        </section>
+    </main>
+    <footer><!-- in footer section1 class containing two span icon  with other subclasses
+         (material-icons,icontext)  for displaing the caal icon and phone number-->
+        <section class="section1">
+            <span class="icon">
+                <i class="material-icons">call</i>
+                <p class="icontext" id="footer_font">
+                    +1 438-874-1235
+                </p>
+            </span>
+            <span class="icon">
+                <i class="material-icons">mail_outline</i>
+                <p class="icontext" id="footer_font">
+                    Email: mail@example.com
+                </p>
+            </span>
+            
+        </section>
+        <section class="section2">
+            <article class="aboutUs">
+                <p id="footer_font">ABOUT US</p>
+                </br>
+                <p id="footer_font">
+                    We're dedicated to giving you the best and charming memories for your special events, 
+                    with a focus on dependability, customer service and uniqueness.
+                    Founded in 2020 , Memories Ties has come a long way from its beginnings in
+                    Montreal,QC. We hope you enjoy our services as much as we enjoy offering them to you. 
+                    If you have any questions or comments, please don't hesitate to contact us.
+                </p>
+            </article>
+            <article class="aboutUs">
+                <p class="newsletter" id="footer_font">NEWSLETTER</p>
+                <p class="newsletter" id="footer_font">
+                    Get the latest updates on our projects 
+                    delivered to your inbox every month.
+                </p>
+                <input type="text" name="subscribe" >
+                <input class="button" type="submit" value="Subscribe" id="submit">
+            </article>
+            <article class="social">
+                <p id="footer_font">WE ARE SOCIAL</p>
+                <ul class="footer_list"><!-- li tag we used  for creating lists in footer_list class in each list the link is inserted for facebook,
+                                            twitter ,instagram,pintrest with the help of<a>tag <-->
+                    <li><a href="https://www.facebook.com/"><i class="fa fa-facebook"></i></a></li>
+                    <li><a href="https://twitter.com/explore"><i class="fa fa-twitter"></i></a></li>
+                    <li><a href="https://www.instagram.com/"><i class="fa fa-instagram"></i></a></li>
+                    <li><a href="https://www.pinterest.ca/"><i class="fa fa-pinterest"></i></a></li>
+                </ul>
+            </article>
+        </section>
+        <section class="section3"><!-- class section3 displaying the given text in the <P> tag(paharagraph)-->
+            <p id="footer_font">© &nbsp;<p id="fullYear"></p>&nbsp; Memories Ties. All rights reserved</p>
+        </section>
+    </footer>
+</body>
+</html>

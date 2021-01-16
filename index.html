@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Event Planner</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script type="text/javascript" src="js/index-js.js"></script>
+    <link rel="stylesheet" href="CSS/event_style.css">
+    <link rel="stylesheet" href="CSS/home_style.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <!-- font-awesome icons -->
+    <link href="http://maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet">
+    <!-- //font-awesome icons -->
+    
+</head>
+<body>
+    <header>
+        <div class="menu">      <!-- here we took menu class-->
+            <nav><!--The <nav> tag used for navigation links for (home,gallery,testimonials,contact).-->
+                <div class="logo">  <!--logo is the  subclass  of the class menu in which image or text inserted-->
+                    <a href="index.html" class="logo_text"> <!-- here <a> is used for link -->
+                        <img id="direction" class="image_style" src="Images/Memo3.png">
+                        <span>MEMORIES TIES</span>
+                        <img class="image_style" src="Images/Memo3.png">  <!--<img> is used for inserting image-->
+                    </a>
+                </div>
+                <ul>
+                    <li name="home"><a href="index.html">Home</a></li>			<!--<li> for list-->	
+                    <li name="gallery"><a href="gallery.html">Gallery</a></li>     <!--<li> for list-->	
+                    <li name="testimonials"><a href="testimonials.html">Testimonials</a></li>       <!--<li> for list-->	
+                    <li name="contact"><a href="contact.html">Contact</a></li>     <!--<li> for list-->	
+                </ul>
+            </nav>
+        </div>
+        <div class="pageTitle"><h2>Home</h2></div>
+    </header>
+    <main class="homeMain">
+        <section class="intro">Hello & Welcome</section> <!--we took seprate section with the given name intro in the homemain class for displaying the hello & welcome text seprately-->
+        <section class="intro">
+                MEMORIES TIES specializes in creating beautiful and unique Weddings, Social Engagements and Corporate Events.  <!--the same intro class used for displaying text at the same place -->
+                We provide a multitude of services ranging from Day-of to Full Service Event Coordination, and everything in between. 
+                Your coordinator will collaborate with you to produce an unforgettable event that will be tailored to you and your vision.
+                During a complimentary initial consultation, you will have the opportunity to look through our portfolios, learn more
+                about our services and ask any questions you may have. Once we determine what services are needed through this
+                consultation, a proposal will be created and customized especially to your needs.
+        </section>
+        <section id="homeGrid">
+            <section class="imageGallery_dim" id="g1"></section>
+            <iframe class="imageGallery_dim" id="g2" 
+                    src="https://www.youtube.com/embed/ipw1fQad5sg" 
+                    frameborder="0" 
+                    allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>
+            </iframe>              <!--iframe is used for inserting vedio and id is used for giving unique identity so later can make chnages on specific  object-->
+            <section class="imageGallery_dim" id="g3"></section>
+            
+
+            <!--<p> is used for  pharagraph within same class "hometext " but with diffrent id  -->
+            <p id="g4" class="homeText">
+                We don't need you to bring us gifts –
+                we know plane tickets are expensive and 
+                your presence at the 
+                wedding is enough! If you
+                really want to give us something,
+                a contribution to our
+                honeymoon fund would be awesome
+            </p>
+            <p id="g5" class="homeText">
+                Build your own birthday party or choose one 
+                of our birthday party packages! Our highly 
+                skilled outdoor education team and
+                transformed historic spaces are here to
+                provide an unforgettable party experience. 
+                From hands-on, full-sensory nature walks to
+                constructing shelters with our diverse 
+                supply of natural materials, we're here
+                for your special day.
+            </p>
+            <p id="g6" class="homeText">
+                “A goal without a plan is just a wish.” 
+
+                And those things you do wish for?
+                Make them happen! Set a goal,
+                make a plan and get to it. 
+                Any great event planner is a
+                pro in this arena!
+            </p>
+        </section>
+    </main>
+    <!--in footer <span> is a inline container for inlining the elements-->
+    <footer><!-- in footer section1 class containing two span icon  with other 
+        subclasses (material-icons,icontext)  for displaing the caal icon and phone number-->
+        <section class="section1">
+            <span class="icon">
+                <i class="material-icons">call</i> <!-- <i> tag is usually displayed in italic-->
+                <p class="icontext" id="footer_font">
+                    +1 438-874-1235
+                </p>
+            </span>
+            <span class="icon">
+                <i class="material-icons">mail_outline</i>
+                <p class="icontext" id="footer_font">
+                    Email: mail@example.com
+                </p>
+            </span>
+            
+        </section>
+        <section class="section2">
+            <article class="aboutUs">
+                <p id="footer_font">ABOUT US</p>
+                </br>
+                <p id="footer_font">
+                    We're dedicated to giving you the best and charming memories for your special events, 
+                    with a focus on dependability, customer service and uniqueness.
+                    Founded in 2020, Memories Ties has come a long way from its beginnings in
+                    Montreal,QC. We hope you enjoy our services as much as we enjoy offering them to you. 
+                    If you have any questions or comments, please don't hesitate to contact us.
+                </p>
+            </article>
+            <article class="aboutUs">
+                <p class="newsletter" id="footer_font">NEWSLETTER</p>
+                <p class="newsletter" id="footer_font">
+                    Get the latest updates on our projects 
+                    delivered to your inbox every month.
+                </p>
+                <input type="text" name="subscribe" >
+                <input class="button" type="submit" value="Subscribe" id="submit">
+            </article>
+            <article class="social">
+                <p id="footer_font">WE ARE SOCIAL</p>
+                <ul class="footer_list"><!-- li tag we used  for creating lists in footer_list class in each list the link is inserted for 
+                    facebook,twitter ,instagram,pintrest with the help of<a>tag <-->
+                    <li><a href="https://www.facebook.com/"><i class="fa fa-facebook"></i></a></li>
+                    <li><a href="https://twitter.com/explore"><i class="fa fa-twitter"></i></a></li>
+                    <li><a href="https://www.instagram.com/"><i class="fa fa-instagram"></i></a></li>
+                    <li><a href="https://www.pinterest.ca/"><i class="fa fa-pinterest"></i></a></li>
+                </ul>
+            </article>
+        </section>
+        <section class="section3"><!-- class section3 displaying the given text in the <P> tag(paharagraph)-->
+            <p id="footer_font">© &nbsp;<p id="fullYear"></p>&nbsp; Memories Ties. All rights reserved</p>
+        </section>
+    </footer>
+</body>
+</html>
